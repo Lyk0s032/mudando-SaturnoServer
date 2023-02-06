@@ -1,0 +1,60 @@
+
+
+
+------------------- Saturno ---------------------
+
+
+1)- Realizar la base de datos y sus tablas principales:
+    ---- Dispositivos   ---------------
+    ---- House          ---------------
+    ---- Referencias    ---------------
+
+
+
+    ------------- Dispositivos  --------------------------------
+    Id          - PrimariKey
+    name        - Nombre del Dispositivo
+    location    - Ubicación del dispositivo.
+    reference   - Identificador sobre las carácteristicas del dispositivo
+
+    ------------- House         --------------------------------
+    id          - PrimariKey
+    dirección   - Calle del hogar.
+    barrio      - Barrio o sector donde esta ubicado el hogar
+    geoLocation - Ubicación a través de coordenadas
+    piso        - Detalle extra de la casa.
+    detalles    - Algunos datos extras que sirven de referencia.
+
+    ------------- Referencias   --------------------------------
+    id          - PrimaryKey.
+    name        - Nombre del dispositivo.
+    sistema     - Tipo de sistema.
+    size        - Un array que  contiene las tres dimensiones.
+    color       - Color del dispositivo.
+    botones     - Cantidad de botones.
+    peso        - Peso del dispositivo.
+    pProducion  - Costo de fabricación.
+    pVenta      - Costo de venta.
+
+    ------------- Servicio / Plan ---------------------------------
+    id          - PrimaryKey.
+    name        - Nombre del Plan.
+    costos      - Valor mensual del Plan.
+    detalles    - Detalles del servicio.
+    
+
+
+
+-------- Inyección para crear referencia
+
+{
+  "name": "DSV1",
+  "sistema": "Segurity V3 AOptions",
+  "size": "18x12x5",
+  "color": "Black", 
+  "botones": 3,
+  "imgProducto2": "https://programacionfacil.org/blog/wp-content/uploads/2021/08/kali_linux_logo.png",
+  "peso": 32,
+  "pProducion": "95.000",
+  "pVenta": "105.000"
+}
